@@ -1,5 +1,7 @@
 <?php
 
+include_once (__DIR__ . '/inc/functions/customizer_functions.php');
+
 function get_navigation() {
 	$templates = array();
 	$templates[] = 'navigation.php';
@@ -24,7 +26,9 @@ add_action('wp_enqueue_scripts', function (){
 	add_action('wp_footer', function (){
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js');
-		wp_enqueue_script('scripts_js', get_template_directory_uri() . 'assets/scripts.js');
+		
 		
 	});
+	
+	
 });

@@ -1,10 +1,11 @@
 <?php get_header() ?>
-<?php get_navigation() ?>
-<h1>Сайт</h1>
+
+<?php get_navigation();?>
 
 
 
 
-<footer>
+
+</body>
+</html>
 <?php get_footer() ?>
-
