@@ -196,6 +196,52 @@ add_action('customize_register', function($wp_customize){
 			)
 		)
 	);
-
+	
+	$wp_customize->add_setting('block_on_video_text',
+		array('default' => 'Высшая школа экономики и управления —
+Трамплин к яркой и успешной карьере')
+	);
+	
+	$wp_customize->add_control('block_on_video_text', array(
+			'label'   => 'Текст в блоке на видео',
+			'section' => 'moriki',
+			'type'    => 'text',
+		)
+	);
+	
+	$wp_customize->add_setting('video_box_text_color', array(
+		'default'           => '#007bff',
+		'sanitize_callback' => 'sanitize_hex_color',
+		'transport'         => 'postMessage'
+	));
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'video_box_text_color',
+			array(
+				'label'   => 'Цвет блока с текстом на видео',
+				'section' => 'moriki',
+				'setting' => 'video_box_text_color',
+			)
+		)
+	);
+	
+	$wp_customize->add_setting('video_text_color', array(
+		'default'           => '#007bff',
+		'sanitize_callback' => 'sanitize_hex_color',
+		'transport'         => 'postMessage'
+	));
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'video_text_color',
+			array(
+				'label'   => 'Цвет текста на видео',
+				'section' => 'moriki',
+				'setting' => 'video_text_color',
+			)
+		)
+	);
+	
 	
 });

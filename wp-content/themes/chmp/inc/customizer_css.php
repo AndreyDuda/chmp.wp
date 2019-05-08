@@ -12,6 +12,12 @@
 		margin-top: 70px;
 	}
 	
+	.navbar {
+		font-family: "Lato";
+		font-weight: 600;
+		font-size: 18px;
+	}
+	
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Releway";
 		font-weight: 300;
@@ -55,12 +61,26 @@
 	.navbar-invers .navbar-brand {
 		color: <?php echo get_theme_mod('logo_text_color') ?>;
 		font-weight: bolder;
-		font-size: 22px;
+		font-size: 18px;
 		letter-spacing: 1px;
 	}
 	.navbar-toggle .icon-bar {
 		background: <?php echo get_theme_mod('nav_color') ?>;
 		border: 1px solid <?php echo get_theme_mod('nav_color') ?>;
+	}
+	
+	#wrap {
+		background: url(<?php echo get_template_directory_uri().'/assets/images/im.jpeg' ?>);
+		background-attachment: relarive;
+		background-position: center;
+		width: 100%;
+		background-size: 100%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		display: block;
+		height: 600px;
 	}
 
 </style>
