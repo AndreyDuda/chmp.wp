@@ -132,37 +132,37 @@ video {
 			<div class="list">
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block2_text1') ?></div>
 				</div>
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block2_text2') ?></div>
 				</div>
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block2_text3') ?></div>
 				</div>
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block2_text4') ?></div>
 				</div>
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block2_text5') ?></div>
 				</div>
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block2_text6') ?></div>
 				</div>
@@ -201,37 +201,37 @@ video {
 			<div class="list">
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block4_text1') ?></div>
 				</div>
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block4_text2') ?></div>
 				</div>
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block4_text3') ?></div>
 				</div>
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block4_text4') ?></div>
 				</div>
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block4_text5') ?></div>
 				</div>
 				<div class="list-item">
 					<div class="icon">
-						<i class="fa fa-adn"></i>
+						<i class="fa fa-microphone"></i>
 					</div>
 					<div class="text"><?php echo get_theme_mod('block4_text6') ?></div>
 				</div>
@@ -277,10 +277,10 @@ video {
 			
 			</h2>
 			<span><?php echo get_theme_mod('block5_text ') ?></span>
-			<form action="">
-				<input type="text" placeholder="Имя">
-				<input type="text" placeholder="Телефон">
-				<input type="submit" value="<?php echo get_theme_mod('block5_text_button') ?>">
+			<form action="" >
+				<input type="text" id="name_form" type="text" placeholder="Имя">
+				<input type="text" id="phone_form" type="tel" placeholder="Телефон">
+				<input type="button"  id="submit_chmp" value="<?php echo get_theme_mod('block5_text_button') ?>">
 			</form>
 			<div class="reg-block">
 				<div class="icon">

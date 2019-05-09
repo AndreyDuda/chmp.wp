@@ -27,6 +27,7 @@ add_action('wp_enqueue_scripts', function (){
 	add_action('wp_footer', function (){
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js');
+		wp_enqueue_script('scripts-js', get_template_directory_uri() . '/assets/js/scripts.js');
 		
 		
 	});
@@ -53,7 +54,7 @@ add_action('wp_ajax_nopriv_sendmail', 'ajax_send_mail');
 
 function ajax_send_mail() {
 	
-	$to = get_theme_mod('menu6');
+	$to = get_theme_mod('global_mail');
 	$subject = "New Order";
 	
 	$name = isset($_POST['name'])? $_POST['name']:'';
@@ -69,8 +70,9 @@ function ajax_send_mail() {
 						</tr>
 					</tbody>
 				</table>';
-	
-	$header = "From:" .  get_theme_mod('menu6') . " \r\n";
+	echo $message ;
+	echo $to ;
+	$header = "From:" .  get_theme_mod('global_mail') . " \r\n";
 	/*$header .= "Cc:coffee-love@coffee-love.com.ua \r\n";*/
 	$header .= "MIME-Version: 1.0\r\n";
 	$header .= "Content-type: text/html; charset='utf-8';\r\n";

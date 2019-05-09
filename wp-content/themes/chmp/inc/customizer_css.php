@@ -34,8 +34,13 @@
 	a:hover, a:focus {
 		text-decoration: none;
 		outline: 0;
-		color: #81164e;
+		color: <?php echo get_theme_mod('second_color') ?>;
 	}
+	#submit_chmp {
+		background: <?php echo get_theme_mod('second_color') ?>;
+		color:white;
+	}
+	
 	.social {
 		display: flex;
 		justify-content: center;
@@ -78,7 +83,7 @@
 		display: block;
 		width: 40px;
 		height: 3px;
-		background: #81164e;
+		background: <?php echo get_theme_mod('second_color') ?>;
 		position: absolute;
 		bottom: -10px;
 		left: 50%;
@@ -134,7 +139,7 @@
 	.section-3 .icon {
 		width: 50px;
 		height: 50px;
-		background: #43a898;
+		background: <?php echo get_theme_mod('icon_color') ?>;
 		margin-right: 10px;
 		text-align: center;
 		display: flex;
@@ -168,7 +173,7 @@
 		padding: 5px 30px;
 		font-weight: bold;
 		font-size: 24px;
-		border: 2px solid #81164e;
+		border: 2px solid <?php echo get_theme_mod('second_color') ?>;
 		border-radius: 10px;
 		margin-bottom: 10px;
 		box-shadow: 0 0 15px rgba(0,0,0,.25)
@@ -249,7 +254,7 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		color: #43a898;
+		color: <?php echo get_theme_mod('icon_color') ?>;
 		font-size: 25px;
 	}
 	
@@ -270,7 +275,7 @@
 		display: block;
 		width: 40px;
 		height: 3px;
-		background: #81164e;
+		background: <?php echo get_theme_mod('second_color') ?>;
 		position: absolute;
 		bottom: -10px;
 		left: 50%;
@@ -313,7 +318,7 @@
 		color: #000;
 	}
 	.section-7 input[type="submit"] {
-		background: #81164e;
+		background: <?php echo get_theme_mod('second_color') ?>;
 		color: #fff;
 	}
 	.section-7 .reg-block {
@@ -355,7 +360,7 @@
 	}
 	.section-8 .info i {
 		margin-right: 20px;
-		color: #43a898;
+		color: <?php echo get_theme_mod('icon_color') ?>;
 		font-size: 30px;
 	}
 	.section-8 .number {

@@ -7,6 +7,39 @@ add_action('customize_register', function($wp_customize){
 			'priority'    => 11,
 		)
 	);
+	$wp_customize->add_setting('second_color', array(
+		'default'           => '#81164e',
+		'sanitize_callback' => 'sanitize_hex_color',
+		'transport'         => 'postMessage'
+	));
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'second_color',
+			array(
+				'label'   => 'Цвет кнопок и другим мелочей',
+				'section' => 'global_chmp',
+				'setting' => 'second_color',
+			)
+		)
+	);
+	
+	$wp_customize->add_setting('icon_color', array(
+		'default'           => '#43a898',
+		'sanitize_callback' => 'sanitize_hex_color',
+		'transport'         => 'postMessage'
+	));
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'icon_color',
+			array(
+				'label'   => 'Цвет иконок',
+				'section' => 'global_chmp',
+				'setting' => 'icon_color',
+			)
+		)
+	);
 	
 	$wp_customize->add_setting('main_color', array(
 		'default'           => '#fdf6ea',
