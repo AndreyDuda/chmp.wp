@@ -3,8 +3,9 @@
 		font-family: 'Open Sans',sans-serif;
 		font-weight: 300;
 		font-size: 16px;
-		background: #fdf6ea;
+		background:<?php echo get_theme_mod('main_color') ?>;
 		margin-top: 70px;
+		color: <?php echo get_theme_mod('main_color_text') ?>;;
 	}
 	.navbar {
 		font-weight: 600;
@@ -23,8 +24,11 @@
 	.centered {
 		text-align: center;
 	}
-	a {
-		color: #000;
+	.navbar-invers ul li a {
+		color: <?php echo get_theme_mod('nav_color') ?>;
+	}
+	.navbar-invers a.navbar-brand {
+		color: <?php echo get_theme_mod('nav_brand_color') ?>;
 	}
 	
 	a:hover, a:focus {
@@ -41,7 +45,7 @@
 		margin-right: 7px;
 	}
 	.navbar-invers {
-		background: #fdf6ea;
+		background: <?php echo get_theme_mod('nav_background') ?>;
 	}
 	.navbar-invers .navbar-brand {
 		font-weight: bolder;
@@ -192,7 +196,7 @@
 	}
 	
 	.progress-bar {
-		background-color: #f2b01e;
+		background-color: <?php echo get_theme_mod('block3_bar_color') ?>;
 		height: 16px;
 		border-radius: 4px;
 		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
@@ -316,7 +320,7 @@
 		margin-top: 30px;
 		display: flex;
 		align-items: center;
-		background: #43a898;
+		background: <?php echo get_theme_mod('block5_background') ?>;
 		padding: 20px;
 		text-align: left;
 	}

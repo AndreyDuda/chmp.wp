@@ -32,3 +32,87 @@ add_action('wp_enqueue_scripts', function (){
 	
 	
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+add_action('wp_ajax_sendmail', 'ajax_send_mail');
+add_action('wp_ajax_nopriv_sendmail', 'ajax_send_mail');
+
+function ajax_send_mail() {
+	
+	$to = "sales@coffee-love.com.ua";
+	$subject = "New Order";
+	
+	$name = isset($_POST['name'])? $_POST['name']:'';
+	$phone = isset($_POST['phone'])? $_POST['phone']:'';
+	$order_id = isset($_POST['order_id'])? $_POST['order_id']:'';
+	$order_type = isset($_POST['order_type'])? $_POST['order_type']:'';
+	$order_title = isset($_POST['order_title'])? $_POST['order_title']:'';
+	
+	$message = '<table>
+					<tbody>
+						<tr>
+							<td><b>Имя</b>:</td><td>'. $name .'</td>
+						</tr>
+						<tr>
+							<td><b>Телефон</b>:</td><td>'. $phone .'</td>
+						</tr>
+						<tr>
+							<td><b>Тип</b>:</td><td>'. $order_type .'</td>
+						</tr>
+						<tr>
+							<td><b>id продукта</b>:</td><td>'. $order_id .'</td>
+						</tr>
+						<tr>
+							<td><b>Название продукта</b>:</td><td>'. $order_title .'</td>
+						</tr>
+					</tbody>
+				</table>';
+	
+	$header = "From:sales@coffee-love.com.ua \r\n";
+	/*$header .= "Cc:coffee-love@coffee-love.com.ua \r\n";*/
+	$header .= "MIME-Version: 1.0\r\n";
+	$header .= "Content-type: text/html; charset='utf-8';\r\n";
+	
+	$defaults = array(
+		'post_status'           => 'publish', // черновик
+		'post_type'             => 'order_coffee_love', // тип - запись блога (пост)
+		'post_author'           => '1', // ID автора
+		'ping_status'           => get_option('default_ping_status'),
+		'post_parent'           => 0, // родитель
+		'menu_order'            => 0, // порядок в меню
+		'to_ping'               =>  '',
+		'pinged'                => '',
+		'post_password'         => '', // без пароля
+		'guid'                  => '',
+		'post_content_filtered' => '',
+		'post_excerpt'          => '', // анонс
+		'import_id'             => 0,
+		'post_title'            => $name . ' | ' . $phone . ' | ' . $order_type . ' | ' . $order_title,
+		'post_content'          => $message
+	);
+	
+	wp_insert_post( $defaults);
+	
+	$retval = mail($to,$subject,$message,$header);
+	
+	if( $retval == true ) {
+		echo "Message sent successfully...";
+	}else {
+		echo "Message could not be sent...";
+	}
+	
+	wp_die();
+}
