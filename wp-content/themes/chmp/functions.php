@@ -1,6 +1,7 @@
 <?php
 
 include_once (__DIR__ . '/inc/functions/customizer_functions.php');
+include_once (__DIR__ . '/inc/functions/admin_functions.php');
 
 function get_navigation() {
 	$templates = array();
@@ -52,14 +53,11 @@ add_action('wp_ajax_nopriv_sendmail', 'ajax_send_mail');
 
 function ajax_send_mail() {
 	
-	$to = "sales@coffee-love.com.ua";
+	$to = get_theme_mod('menu6');
 	$subject = "New Order";
 	
 	$name = isset($_POST['name'])? $_POST['name']:'';
 	$phone = isset($_POST['phone'])? $_POST['phone']:'';
-	$order_id = isset($_POST['order_id'])? $_POST['order_id']:'';
-	$order_type = isset($_POST['order_type'])? $_POST['order_type']:'';
-	$order_title = isset($_POST['order_title'])? $_POST['order_title']:'';
 	
 	$message = '<table>
 					<tbody>
@@ -69,19 +67,10 @@ function ajax_send_mail() {
 						<tr>
 							<td><b>Телефон</b>:</td><td>'. $phone .'</td>
 						</tr>
-						<tr>
-							<td><b>Тип</b>:</td><td>'. $order_type .'</td>
-						</tr>
-						<tr>
-							<td><b>id продукта</b>:</td><td>'. $order_id .'</td>
-						</tr>
-						<tr>
-							<td><b>Название продукта</b>:</td><td>'. $order_title .'</td>
-						</tr>
 					</tbody>
 				</table>';
 	
-	$header = "From:sales@coffee-love.com.ua \r\n";
+	$header = "From:" .  get_theme_mod('menu6') . " \r\n";
 	/*$header .= "Cc:coffee-love@coffee-love.com.ua \r\n";*/
 	$header .= "MIME-Version: 1.0\r\n";
 	$header .= "Content-type: text/html; charset='utf-8';\r\n";
@@ -100,7 +89,7 @@ function ajax_send_mail() {
 		'post_content_filtered' => '',
 		'post_excerpt'          => '', // анонс
 		'import_id'             => 0,
-		'post_title'            => $name . ' | ' . $phone . ' | ' . $order_type . ' | ' . $order_title,
+		'post_title'            => $name . ' | ' . $phone . ' | ',
 		'post_content'          => $message
 	);
 	

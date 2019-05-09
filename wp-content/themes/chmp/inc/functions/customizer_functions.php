@@ -47,7 +47,7 @@ add_action('customize_register', function($wp_customize){
 	
 	
 	$wp_customize->add_setting('global_mail',
-		array('default' => 'E-mail для почты')
+		array('default' => 'dudavx85@mail.com')
 	);
 	
 	$wp_customize->add_control('global_mail', array(

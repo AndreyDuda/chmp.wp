@@ -1,8 +1,17 @@
-(function($){
-	alert();
-	$(function() {
-		$('.menu__icon').on('click', function() {
-			$(this).closest('.menu').toggleClass('menu_state_open');
-		});
-	});
-})(jQuery);
+/*
+$.ajax({
+	url: window.wp.ajax_url,
+	data: data,
+	type: 'post',
+	success: function (response) {
+		if (response.error) {
+			alert('Ошибка сервера, попробуйте еще раз.');
+			return;
+		}
+		alert('Заказ отправлен.');
+	},
+	error: function (jqXHR, textStatus, errorThrown) {
+		alert('Ошибка сервера, попробуйте еще раз.');
+	}
+});*/
+ alert();
