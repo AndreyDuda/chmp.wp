@@ -1,11 +1,11 @@
-<section class="section-8" ">
+<section class="section-8" >
 <div class="container">
 	<div class="row">
 		<h2>
 			<?php echo get_theme_mod('contact_main_text') ?>
 		</h2>
 		<div class="blocks">
-			<div class="map" id="menu6">
+			<div class="map" >
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.33683187832!2d30.743500439742753!3d46.48127382939259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63198cd4bbb4d%3A0xccef805bc260d7f9!2sIl+Decameron+Clubhouse+Odessa!5e0!3m2!1sru!2sua!4v1557413907964!5m2!1sru!2sua"
 						width="700"
 						height="450"

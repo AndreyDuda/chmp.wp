@@ -203,7 +203,7 @@
 					<div class="icon">
 						<i class="fa fa-money" aria-hidden="true"></i>
 					</div>
-					<div class="text">
+					<div class="text" id="menu6">
 						<h4><?php echo get_theme_mod('block5_text_button1') ?></h4>
 						<span>
 						<?php echo get_theme_mod('block5_text_button2') ?>

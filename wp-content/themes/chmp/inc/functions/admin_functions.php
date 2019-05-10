@@ -6,7 +6,7 @@ add_action('admin_menu', function (){
 		'edit_others_posts',
 		'chmp',
 		function (){},
-		get_template_directory_uri() . '/assets/image/favicon.ico' ,
+		get_template_directory_uri() . '/assets/images/favicon.ico' ,
 		3);
 	
 	
