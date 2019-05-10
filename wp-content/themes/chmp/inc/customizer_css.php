@@ -68,6 +68,69 @@
 	.icon-bar {
 		background: #000;
 	}
+	
+	
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+		-o-object-position: center;
+		object-position: center;
+		-webkit-filter: contrast(0.45);
+		-moz-filter: contrast(0.45);
+		-o-filter: contrast(0.45);
+		-ms-filter: contrast(0.45);
+		filter: contrast(0.45);
+		display: block;
+		
+	}
+	.overlay {
+		position: relative;
+		min-height: 100vh;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.overlay span {
+		background:<?php echo get_theme_mod('block1_background_color') ?>;
+		color: <?php echo get_theme_mod('video_text_color') ?>;
+		text-shadow: 1px 1px 2px black, 0 0 1em black;
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 1;
+		mix-blend-mode: overlay;
+		overflow: hidden;
+		padding: 0.5em 1em;
+		text-align: center;
+		border-radius: 0.4em;
+		
+	}
+	
+	@media screen and (max-width:768px;){
+		.overlay span {
+			font-size: 25px;
+			
+		}
+	}
+	
+	@media screen and (max-width:450px){
+		.overlay span {
+			font-size: 25px;
+			
+		}
+	}
+	
+	
 	h2{
 		margin-bottom: 40px;
 	}
