@@ -122,8 +122,20 @@
 	.section-3 h2 {
 		color: #fff;
 	}
+	.scroll-menu li.active {
+		background: <?php echo get_theme_mod('nav_background') ?>;
+		border-bottom: 1px solid <?php echo get_theme_mod('second_color') ?>;
+	}
+	.scroll-menu li:hover {
+		background: <?php echo get_theme_mod('nav_background') ?>;
+	}
+
+	.nav>li>a:hover, .nav>li>a:focus {
+		text-decoration: none;
+		background: <?php echo get_theme_mod('nav_background') ?>;
+	}
 	.section-3 .image {
-		background: url(<?php echo get_template_directory_uri().'/assets/images/img-3.jpg' ?>);
+		background: url(<?php echo get_template_directory_uri().'/assets/images/img-2.jpg' ?>);
 		max-width: 1000px;
 		margin: 0 auto 50px;
 		-webkit-background-size: cover;
