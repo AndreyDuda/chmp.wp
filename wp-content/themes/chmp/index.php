@@ -97,8 +97,8 @@
 				<div class="blocks">
 					<div class="block"><?php echo get_theme_mod('block3_punkt') ?></div>
 					<div class="block"><?php echo get_theme_mod('block3_punkt1') ?></div>
-					<div class="block"><?php echo get_theme_mod('block3_punkt2') ?></div>
-					<div class="block"><?php echo get_theme_mod('block3_punkt3') ?></div>
+					<!--<div class="block"><?php /*echo get_theme_mod('block3_punkt2') */?></div>
+					<div class="block"><?php /*echo get_theme_mod('block3_punkt3') */?></div>-->
 				</div>
 				<div class="progress-block">
 					<span><?php echo get_theme_mod('block3_bar')  ?></span>

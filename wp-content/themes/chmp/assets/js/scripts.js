@@ -44,6 +44,9 @@ $('#submit_chmp').click(function () {
 		
 		
 	 });
+	
+	$('#name_form').val('');
+	$('#phone_form').val('');
  });
 
 // Cache selectors
