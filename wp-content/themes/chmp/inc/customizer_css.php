@@ -108,12 +108,11 @@
 		font-weight: bold;
 		font-size: 45px;
 		line-height: 1;
-		mix-blend-mode: overlay;
+		/*mix-blend-mode: overlay;*/
 		overflow: hidden;
 		padding: 0.5em 1em;
 		text-align: center;
 		border-radius: 0.4em;
-		
 	}
 	
 	@media screen and (max-width:768px;){
