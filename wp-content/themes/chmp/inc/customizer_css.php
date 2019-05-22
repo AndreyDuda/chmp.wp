@@ -2,7 +2,7 @@
 	body{
 		font-family: 'Open Sans',sans-serif;
 		font-weight: 300;
-		font-size: 16px;
+		font-size: 22px;
 		background:<?php echo get_theme_mod('main_color') ?>;
 		margin-top: 70px;
 		color: <?php echo get_theme_mod('main_color_text') ?>;;
@@ -136,7 +136,7 @@
 	}
 	h2+p {
 		border: none;
-		font-size: 18px;
+		font-size: 22px;
 		font-style: italic;
 		line-height: 32px;
 		color: gray;
@@ -507,6 +507,10 @@
 		}
 		.navbar-toggle {
 			margin-right: 0!important;
+		}
+		
+		div.container p {
+			font-size: 24px!important;
 		}
 	}
 
