@@ -40,6 +40,15 @@
 		background: <?php echo get_theme_mod('second_color') ?>;
 		color:white;
 	}
+	#submit_chmp:active {
+		background:-webkit-linear-gradient(top,#9ACD32,#228B22); /* для Chrome и Safari */
+		background:-o-linear-gradient(top,#9ACD32,#228B22); /* для Opera */
+		background:-moz-linear-gradient(top,#9ACD32,#228B22); /* для Firefox */
+		background:-ms-linear-gradient(top,#9ACD32,#228B22); /* для IE10+ */
+		color: #fff!important;
+		text-decoration: none!important;}
+	}
+	
 	
 	.social {
 		display: flex;

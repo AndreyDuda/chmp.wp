@@ -22,6 +22,18 @@ $('#submit_chmp').click(function () {
 	 var name = $('#name_form').val();
 	 var phone = $('#phone_form').val();
 	 
+	 
+	 if (name.length < 2) {
+		
+		alert('Укажите Ваше имя.');
+		return;
+	 }
+	if(phone.length < 10 || phone.length > 12){
+		
+		alert('Неверно указан телефон.');
+		return;
+	}
+	 
 	 var data = {
 		 action: 'sendmail',
 		 name: name,
@@ -98,3 +110,24 @@ $(window).scroll(function() {
 });
 
 
+$("input#phone_form").keydown(function(event){
+	
+	if (event.key!= ''&& event.key!= ' ' && event.key >= 0 && event.key < 10 || event.key == 'Backspace' || event.key =='ArrowRight' || event.key =='ArrowLeft'){
+	
+	}else{
+		event.preventDefault();
+	}
+	
+});
+
+$("input#name_form").keydown(function(event){
+	var name = $('#name_form').val();
+	if (event.key == ' '){
+		$('#name_form').val(name.trim());
+	}else if(event.key != 0 && event.key != 1 && event.key != 2 && event.key != 3 && event.key != 4 && event.key != 5 && event.key != 6 && event.key != 7 && event.key != 8 && event.key != 9){
+	
+	}else {
+		event.preventDefault();
+	}
+	
+});

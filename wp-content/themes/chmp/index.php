@@ -158,7 +158,7 @@
 	</section>
 	
 	<section class="section-6" id="menu4">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<h2><?php echo get_theme_mod('block5_main') ?></h2>
 				<a target="_blank" href="<?php echo get_template_directory_uri() . '/assets/images/spiker.jpg' ?>">
@@ -195,8 +195,8 @@
 				</h2>
 				<span><?php echo get_theme_mod('block5_text ') ?></span>
 				<form action="" >
-					<input type="text" id="name_form" type="text" placeholder="Имя">
-					<input type="text" id="phone_form" type="tel" placeholder="Телефон">
+					<input id="name_form" type="text" placeholder="Имя">
+					<input id="phone_form" type="tel" placeholder="Телефон">
 					<input type="button"  id="submit_chmp" value="<?php echo get_theme_mod('block5_text_button') ?>">
 				</form>
 				<div class="reg-block">
@@ -213,10 +213,6 @@
 			</div>
 		</div>
 	</section>
-	
-
-
-
 
 </body>
 </html>
