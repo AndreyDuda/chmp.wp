@@ -213,10 +213,10 @@
 	.section-3 .icon {
 		width: 50px;
 		height: 50px;
-		background: <?php echo get_theme_mod('icon_color') ?>;
+		/*background: <?php echo get_theme_mod('icon_color') ?>;*/
 		margin-right: 10px;
 		text-align: center;
-		display: flex;
+		display: flex; 
 		align-items: center;
 		justify-content: center;
 	}
