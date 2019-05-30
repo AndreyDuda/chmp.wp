@@ -1,20 +1,25 @@
 <style>
-	body{
+	* {
 		font-family: 'Open Sans',sans-serif;
+		font-size: 22px;
 		font-weight: 300;
+	}
+	body{
+		/*font-family: 'Open Sans',sans-serif;*/
+		/*font-weight: 300;*/
 		font-size: 22px;
 		background:<?php echo get_theme_mod('main_color') ?>;
 		margin-top: 70px;
 		color: <?php echo get_theme_mod('main_color_text') ?>;;
 	}
 	.navbar {
-		font-weight: 600;
+		/*font-weight: 600;*/
 		font-size: 18px;
 	}
 	
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Releway";
-		font-weight: 300;
+	/*	font-family: "Releway";*/
+		/*font-weight: 300;*/
 		position: relative;
 	}
 	p {
@@ -26,6 +31,7 @@
 	}
 	.navbar-invers ul li a {
 		color: <?php echo get_theme_mod('nav_color') ?>;
+		font-size: 18px!important;
 	}
 	.navbar-invers a.navbar-brand {
 		color: <?php echo get_theme_mod('nav_brand_color') ?>;
@@ -62,7 +68,7 @@
 		background: <?php echo get_theme_mod('nav_background') ?>;
 	}
 	.navbar-invers .navbar-brand {
-		font-weight: bolder;
+		/*font-weight: bolder;*/
 		font-size: 18px;
 		letter-spacing: 1px;
 	}
@@ -114,7 +120,7 @@
 		background:<?php echo get_theme_mod('block1_background_color') ?>;
 		color: <?php echo get_theme_mod('video_text_color') ?>;
 		text-shadow: 1px 1px 2px black, 0 0 1em black;
-		font-weight: bold;
+		/*font-weight: bold;*/
 		font-size: 45px;
 		line-height: 1;
 		/*mix-blend-mode: overlay;*/
@@ -230,7 +236,7 @@
 		justify-content: center;
 	}
 	.section-3 .icon i {
-		font-size: 35px;
+		font-size: 22px;
 		color: #fff;
 	}
 	.section-3 .list-item {
@@ -243,7 +249,7 @@
 	}
 	.section-3 .list-item .text {
 		color: #fff;
-		font-weight: bold;
+		/*font-weight: bold;*/
 	}
 	
 	
@@ -254,8 +260,8 @@
 	.section-4 .block {
 		width: 300px;
 		padding: 5px 30px;
-		font-weight: bold;
-		font-size: 24px;
+		/*font-weight: bold;*/
+		font-size: 22px;
 		border: 2px solid <?php echo get_theme_mod('second_color') ?>;
 		border-radius: 10px;
 		margin-bottom: 10px;
@@ -326,8 +332,8 @@
 		display: flex;
 		margin-bottom: 20px;
 		text-align: left;
-		font-size: 20px;
-		font-weight: 600;
+		font-size: 22px;
+		/*font-weight: 600;*/
 		position: relative;
 	}
 	.section-5 .list .text {
@@ -338,7 +344,7 @@
 		left: 0;
 		top: 0;
 		color: <?php echo get_theme_mod('icon_color') ?>;
-		font-size: 25px;
+		font-size: 22px;
 	}
 	
 	.section-6 .image {
@@ -413,11 +419,11 @@
 		text-align: left;
 	}
 	.section-7 .icon {
-		font-size: 50px;
+		font-size: 22px;
 		margin-right: 20px;
 	}
 	.section-7 h4 {
-		font-weight: 600;
+		/*font-weight: 600;*/
 		font-size: 30px;
 	}
 	.section-8 {
@@ -444,10 +450,10 @@
 	.section-8 .info i {
 		margin-right: 20px;
 		color: <?php echo get_theme_mod('icon_color') ?>;
-		font-size: 30px;
+		font-size: 22px;
 	}
 	.section-8 .number {
-		font-size: 25px;
+		font-size: 22px;
 	}
 	
 	@media (max-width: 768px) {
@@ -507,7 +513,7 @@
 			width: 100%;
 		}
 		.section-7 h4 {
-			font-size: 20px;
+			font-size: 22px;
 		}
 		.section-3 .icon {
 			width: 35px;
@@ -518,7 +524,10 @@
 		}
 		
 		div.container p {
-			font-size: 24px!important;
+			font-size: 22px!important;
+		}
+		.navbar-invers ul li a {
+			font-size: 18px;
 		}
 	}
 

@@ -134,24 +134,24 @@
 						</div>
 						<div class="text"><?php echo get_theme_mod('block4_text3') ?></div>
 					</div>
-					<div class="list-item">
+<!--					<div class="list-item">
 						<div class="icon">
 							<i class="fa fa-microphone"></i>
 						</div>
-						<div class="text"><?php echo get_theme_mod('block4_text4') ?></div>
+						<div class="text"><?php /*echo get_theme_mod('block4_text4') */?></div>
 					</div>
 					<div class="list-item">
 						<div class="icon">
 							<i class="fa fa-microphone"></i>
 						</div>
-						<div class="text"><?php echo get_theme_mod('block4_text5') ?></div>
+						<div class="text"><?php /*echo get_theme_mod('block4_text5') */?></div>
 					</div>
 					<div class="list-item">
 						<div class="icon">
 							<i class="fa fa-microphone"></i>
 						</div>
-						<div class="text"><?php echo get_theme_mod('block4_text6') ?></div>
-					</div>
+						<div class="text"><?php /*echo get_theme_mod('block4_text6') */?></div>
+					</div>-->
 				</div>
 			</div>
 		</div>
