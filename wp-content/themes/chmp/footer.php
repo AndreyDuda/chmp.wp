@@ -28,7 +28,7 @@
 				</div>
 				<div class="mail">
 					<i class="fa fa-reply"></i>
-					<a href="mailto:<?php echo get_theme_mod('contact_mail')?>"><?php echo get_theme_mod('contact_mail') ?></a>
+					<a href="<?php echo get_theme_mod('contact_mail')?>"><?php echo get_theme_mod('contact_mail') ?></a>
 				</div>
 			</div>
 		
